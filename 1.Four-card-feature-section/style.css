@@ -1,0 +1,96 @@
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fafafa;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px auto;
+  max-width: 350px;
+  font-size: .7rem;
+}
+
+h2 {
+  font-weight: 200;
+  font-size: 1.3rem;
+}
+
+h1 {
+  font-weight: 600;
+  margin: 5px 0 10px 0;
+}
+
+p {
+  font-weight: 200;
+  text-align: center;
+  color: #a3a5ae;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .card {
+  margin: 10px;
+  border-radius: 5px;
+  background: white;
+  width: 240px;
+  border-radius: 5px;
+  padding: 20px 20px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.container .card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+}
+
+.container .card p {
+  font-size: .7rem;
+  text-align: left;
+  margin: 10px 0 20px 0;
+}
+
+.container .card img {
+  width: 20%;
+  display: block;
+  margin-left: auto;
+}
+/*# sourceMappingURL=style.css.map */
