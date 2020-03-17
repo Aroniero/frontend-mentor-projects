@@ -93,4 +93,20 @@ p {
   display: block;
   margin-left: auto;
 }
+
+.container .cyanLine::before {
+  background: #45d3d3;
+}
+
+.container .redLine::before {
+  background: #ea5353;
+}
+
+.container .blueLine::before {
+  background: #549ef2;
+}
+
+.container .orangeLine::before {
+  background: #fcaf4a;
+}
 /*# sourceMappingURL=style.css.map */

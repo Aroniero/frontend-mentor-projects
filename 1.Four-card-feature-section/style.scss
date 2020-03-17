@@ -50,6 +50,7 @@ p{
   display: flex;
 
   justify-content: center;
+
   flex-wrap: wrap;
 
   .card{
@@ -84,6 +85,19 @@ p{
       display: block;
       margin-left: auto;
     }
-
   }
+
+  .cyanLine::before {
+    background: $Cyan;
+  }
+  .redLine::before {
+    background: $Red;
+  }
+  .blueLine::before {
+    background: $Blue;
+  }
+  .orangeLine::before {
+    background: $Orange;
+  }
+
 }
