@@ -1,0 +1,103 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  background-image: url(./images/bg-pattern-desktop.svg);
+}
+
+section {
+  margin: 5rem 20rem;
+}
+
+section img {
+  margin-bottom: 8rem;
+}
+
+section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section .container h1 {
+  text-transform: uppercase;
+  letter-spacing: 1.5rem;
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  font-weight: 400;
+}
+
+section .container h1 span {
+  color: #ce9797;
+}
+
+section .container p {
+  font-size: 1.5rem;
+  color: #ce9797;
+  line-height: 2rem;
+  max-width: 35rem;
+  margin: 3rem 0;
+}
+
+section .container form {
+  margin-top: 4rem;
+}
+
+section .container form input {
+  border: 1px solid #ce9797;
+  border-radius: 3rem;
+  padding: 1.5rem 2rem;
+  width: 30rem;
+}
+
+section .container form input::-webkit-input-placeholder {
+  color: #ce9797;
+  font-size: 1rem;
+}
+
+section .container form input:-ms-input-placeholder {
+  color: #ce9797;
+  font-size: 1rem;
+}
+
+section .container form input::-ms-input-placeholder {
+  color: #ce9797;
+  font-size: 1rem;
+}
+
+section .container form input::placeholder {
+  color: #ce9797;
+  font-size: 1rem;
+}
+
+section .container form button {
+  border: 1px solid #ce9797;
+  border-radius: 3rem;
+  padding: 0 2rem;
+  position: absolute;
+  right: 56%;
+  height: 65px;
+  width: 8rem;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+section .container .rightSide img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */
