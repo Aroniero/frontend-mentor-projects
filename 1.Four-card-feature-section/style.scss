@@ -87,15 +87,24 @@ p{
     }
   }
 
-  .cyanLine::before {
-    background: $Cyan;
+  .cyanLine {
+    transform: translateY(50%);
+    &::before{
+      background: $Cyan;
+    }
   }
+
   .redLine::before {
     background: $Red;
   }
-  .blueLine::before {
-    background: $Blue;
+
+  .blueLine {
+    transform: translateY(50%);
+    &::before{
+      background: $Blue;
+    }
   }
+
   .orangeLine::before {
     background: $Orange;
   }

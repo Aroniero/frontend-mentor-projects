@@ -94,12 +94,22 @@ p {
   margin-left: auto;
 }
 
+.container .cyanLine {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
 .container .cyanLine::before {
   background: #45d3d3;
 }
 
 .container .redLine::before {
   background: #ea5353;
+}
+
+.container .blueLine {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 .container .blueLine::before {
