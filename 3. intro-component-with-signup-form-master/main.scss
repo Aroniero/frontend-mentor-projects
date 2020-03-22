@@ -74,7 +74,8 @@ body {
 
       &__item{
         // background: color;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+        position: relative;
         input {
           font-size: 18px;
           padding: 15px;
@@ -86,9 +87,23 @@ body {
           border: 1px solid $DarkBlue;
           outline: none;
         }
-        small {
-          display: none;
+        .error, .error::placeholder, .error:focus{
+          border-color: $Red;
+          color: $Red;
         }
+        small {
+          margin-top: 5px;
+          display: block;
+          text-align: end;
+          color: $Red;
+          opacity: 0;
+        }
+        .errIcon {
+          position: absolute;
+          top: 15px;
+          right: 15px;
+          opacity: 0;
+        };
       }
 
       &__submit{

@@ -73,7 +73,8 @@ body {
 }
 
 .container .rightSide .box__item {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  position: relative;
 }
 
 .container .rightSide .box__item input {
@@ -89,8 +90,39 @@ body {
   outline: none;
 }
 
+.container .rightSide .box__item .error, .container .rightSide .box__item .error::-webkit-input-placeholder, .container .rightSide .box__item .error:focus {
+  border-color: #ff7a7a;
+  color: #ff7a7a;
+}
+
+.container .rightSide .box__item .error, .container .rightSide .box__item .error:-ms-input-placeholder, .container .rightSide .box__item .error:focus {
+  border-color: #ff7a7a;
+  color: #ff7a7a;
+}
+
+.container .rightSide .box__item .error, .container .rightSide .box__item .error::-ms-input-placeholder, .container .rightSide .box__item .error:focus {
+  border-color: #ff7a7a;
+  color: #ff7a7a;
+}
+
+.container .rightSide .box__item .error, .container .rightSide .box__item .error::placeholder, .container .rightSide .box__item .error:focus {
+  border-color: #ff7a7a;
+  color: #ff7a7a;
+}
+
 .container .rightSide .box__item small {
-  display: none;
+  margin-top: 5px;
+  display: block;
+  text-align: end;
+  color: #ff7a7a;
+  opacity: 0;
+}
+
+.container .rightSide .box__item .errIcon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  opacity: 0;
 }
 
 .container .rightSide .box__submit .submitBtn {
