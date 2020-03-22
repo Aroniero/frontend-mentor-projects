@@ -1,1 +1,123 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  background-image: url("/images/bg-intro-desktop.png");
+  background-color: #ff7a7a;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  padding: 100px 300px;
+}
+
+.container .leftSide {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: white;
+  margin-right: 30px;
+}
+
+.container .leftSide h1 {
+  font-size: 50px;
+  line-height: 1.1;
+}
+
+.container .leftSide p {
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.container .rightSide {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.container .rightSide .trial, .container .rightSide .box {
+  padding: 30px 40px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 8px 4px -1px rgba(0, 0, 0, 0.26);
+          box-shadow: 0px 8px 4px -1px rgba(0, 0, 0, 0.26);
+}
+
+.container .rightSide .trial {
+  background-color: #6055a5;
+  color: white;
+  text-align: center;
+}
+
+.container .rightSide .trial span {
+  font-weight: 600;
+}
+
+.container .rightSide .box {
+  background-color: white;
+}
+
+.container .rightSide .box__item {
+  margin-bottom: 20px;
+}
+
+.container .rightSide .box__item input {
+  font-size: 18px;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #b9b6d3;
+  width: 100%;
+}
+
+.container .rightSide .box__item input:focus {
+  border: 1px solid #3e3c49;
+  outline: none;
+}
+
+.container .rightSide .box__item small {
+  display: none;
+}
+
+.container .rightSide .box__submit .submitBtn {
+  font-size: 18px;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #b9b6d3;
+  width: 100%;
+  background: #38cc8c;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.container .rightSide .box__submit .rules {
+  display: block;
+  margin-top: 10px;
+  font-size: 10px;
+  text-align: center;
+}
+
+.container .rightSide .box__submit .rules span {
+  color: #ff7a7a;
+  font-weight: 700;
+}
+
+.container .rightSide footer p {
+  font-size: 20px;
+}
+/*# sourceMappingURL=main.css.map */
