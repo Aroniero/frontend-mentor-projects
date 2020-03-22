@@ -112,8 +112,8 @@ body {
 
 @media (min-width: 1440px) {
   .logo {
-    margin: 3rem;
-    width: 15rem;
+    margin: 4rem 15%;
+    width: 10rem;
   }
   .container {
     -webkit-box-orient: horizontal;
