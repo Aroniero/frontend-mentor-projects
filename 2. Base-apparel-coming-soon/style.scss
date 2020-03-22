@@ -1,5 +1,6 @@
 // Layout
 $Mobile: 375px;
+$Laptop: 700px;
 $Desktop: 1440px;
 
 // Colors
@@ -30,75 +31,184 @@ body{
  background-image: url(./images/bg-pattern-desktop.svg);
 }
 
-section{
-  margin: 5rem 20rem;
-  img{
-    margin-bottom: 8rem;
+//
+//
+//
+//
+
+//     .rightSide{
+//       img{
+//         // position: absolute;
+//         top: 0;
+//         right: 0;
+//         height: 100%;
+//         margin: 0;
+
+//       }
+//     }
+
+//   }
+// }
+
+
+// footer {
+//     // position: absolute;
+//     bottom: 6%;
+//     left: 18%;
+//   .attribution{
+//     font-size: 1.3rem;
+//   }
+// }
+
+
+
+  .logo {
+
+    margin: 2rem 30%;
+
+
+    width: 10rem;
   }
-  .container{
+
+
+  .container {
     display: flex;
-    h1{
+    flex-direction: column-reverse;
+
+
+    .leftSide{
+      h1{
       text-transform: uppercase;
-      letter-spacing: 1.5rem;
-      font-size: 5rem;
-      margin-bottom: 3rem;
-      font-weight: 400;
-      span {
-        color: $DesaturatedRed;
-      }
-    }
-    p{
-      font-size: 1.5rem;
-      color: $DesaturatedRed;
-      line-height: 2rem;
-      max-width: 35rem;
-      margin: 3rem 0;
-    }
-    form {
-      margin-top: 4rem;
-
-      input {
-        border: 1px solid $DesaturatedRed;
-        border-radius: 3rem;
-        padding: 1.5rem 2rem;
-
-        width: 30rem;
-        &::placeholder{
+      text-align: center;
+      letter-spacing: 1rem;
+      font-size: 2.5rem;
+      margin: 4rem 0 1rem 0;
+      font-weight: 600;
+        span {
           color: $DesaturatedRed;
-          font-size: 1rem;
+          font-weight: 200;
         }
       }
 
-      button {
-        border: 1px solid $DesaturatedRed;
-        border-radius: 3rem;
-        padding: 0 2rem;
-
-        position: absolute;
-        right: 56%;
-
-        height: 65px;
-        width: 8rem;
-        background: $gradient2;
-        color: white;
-        font-size: 2rem;
-        font-weight: 600;
-
-
-
+      p{
+        font-size: .8rem;
+        text-align: center;
+        color: $DesaturatedRed;
+        line-height: 1.5rem;
+        max-width: 20rem;
+        margin: 1rem auto;
       }
+
+
+      form {
+        max-width: 400px;;
+        margin: 3rem auto;
+        text-align: center;
+        position: relative;
+
+
+        input {
+          border: 1px solid $DesaturatedRed;
+          border-radius: 3rem;
+          padding: 1rem 2rem;
+          width: 18rem;
+
+
+          &::placeholder{
+            color: $DesaturatedRed;
+            font-size: .8rem;
+          }
+        }
+
+        button {
+          border: 1px solid $DesaturatedRed;
+          border-radius: 3rem;
+          // padding: 0 2rem;
+
+          position: absolute;
+          right: 8%;
+
+          height: 49px;
+          width: 4.3rem;
+
+          background: $gradient2;
+          color: white;
+          font-size: 2rem;
+          font-weight: 400;
+          box-shadow: $gradient2;
+
+        }
+      }
+
     }
 
     .rightSide{
-      img{
+      margin: auto;
+        text-align: center;
+      img {
+
+        min-width: 2rem;
+        // content:url('/images/hero-mobile.jpg');
+      }
+    }
+  }
+
+@media (min-width: $Desktop) {
+
+  .logo{
+    margin: 3rem;
+    width: 15rem;
+  }
+  .container{
+    flex-direction: row;
+
+    .leftSide {
+      margin: 0 15%;
+
+      h1{
+        font-size: 4.5rem;
+        text-align: left;
+      }
+      p{
+        text-align: left;
+        line-height: 2rem;
+        max-width: 30rem;
+        font-size: 1.3rem;
+        margin: 5rem auto;
+      }
+      form {
+        margin: 0;
+        max-width: 432px;
+        input {
+          width: 27rem;
+          padding: 1.3rem 2.3rem;
+          &::placeholder{
+          // color: $DesaturatedRed;
+            font-size: 1rem;
+          }
+
+        }
+        button{
+          right: 0%;
+          height: 60px;
+          width: 6rem;
+
+        }
+      }
+    }
+    // position: relative;
+    .rightSide{
+      margin: none;
+      img {
         position: absolute;
+        width: auto;
         top: 0;
         right: 0;
-        height: 100%;
+        height: 100vh;
         margin: 0;
+        content:url('/images/hero-desktop.jpg');
 
       }
     }
-
   }
 }
