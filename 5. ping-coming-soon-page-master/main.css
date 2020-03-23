@@ -6,5 +6,111 @@
 body {
   font-size: 20px;
   font-family: 'Libre Franklin', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+.container .logo {
+  margin-bottom: 40px;
+}
+
+.container .title {
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.container .title span {
+  font-weight: 700;
+}
+
+.container .subtitle {
+  font-size: 15px;
+  margin: 25px 0 30px;
+}
+
+.container .newsletterForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.container .newsletterForm .emailInput, .container .newsletterForm .emailSubmit {
+  padding: 15px 30px;
+  border-radius: 20px;
+  border: 1px solid #c2d3ff;
+  margin-bottom: 10px;
+}
+
+.container .newsletterForm .emailInput::-webkit-input-placeholder {
+  color: #c2d3ff;
+}
+
+.container .newsletterForm .emailInput:-ms-input-placeholder {
+  color: #c2d3ff;
+}
+
+.container .newsletterForm .emailInput::-ms-input-placeholder {
+  color: #c2d3ff;
+}
+
+.container .newsletterForm .emailInput::placeholder {
+  color: #c2d3ff;
+}
+
+.container .newsletterForm .emailSubmit {
+  background-color: #4f7df3;
+  color: #fff;
+  font-weight: 600;
+}
+
+.container .dashboard {
+  max-width: 400px;
+  margin: 0 -20px 40px;
+}
+
+.container .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
+  list-style-type: none;
+}
+
+.container .socials .item {
+  text-align: center;
+  border: 1px solid #c2d3ff;
+  border-radius: 40px;
+  margin: 0 10px;
+}
+
+.container .socials .item i {
+  color: #4f7df3;
+  padding: 10px 12px;
+}
+
+.container .copyright {
+  font-size: 13px;
+  font-weight: 200;
+  margin: 10px 0 30px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -20,5 +20,85 @@ $VeryDarkBlue: hsl(209, 33%, 12%);
 body {
   font-size: 20px;
   font-family: 'Libre Franklin', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  // height: 100vh;
 }
 
+.container {
+  margin-top: 100px;
+  // max-width: 400px;
+  .logo {
+    margin-bottom: 40px;
+  }
+  .title{
+    font-weight: 300;
+    font-size: 30px;
+    span{
+      font-weight: 700;
+    }
+  }
+  .subtitle{
+    font-size: 15px;
+    margin: 25px 0 30px;
+  }
+
+  .newsletterForm{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+
+    .emailInput, .emailSubmit{
+      padding: 15px 30px;
+      border-radius: 20px;
+      border: 1px solid $PaleBlue;
+      margin-bottom: 10px;
+    }
+
+    .emailInput::placeholder{
+      color: $PaleBlue;
+    }
+    .emailSubmit{
+      background-color: $Blue;
+      color: #fff;
+      font-weight: 600;
+    }
+  }
+
+  .dashboard{
+    max-width: 400px;
+    margin: 0 -20px 40px;
+    // display: none;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    
+    list-style-type: none;
+
+    .item {
+     
+      text-align: center;
+      border: 1px solid $PaleBlue;
+      border-radius: 40px;
+      margin: 0 10px;
+      i {
+        color: $Blue;
+        padding: 10px 12px;
+      }
+    }
+    
+  }
+
+  .copyright{
+    font-size: 13px;
+    font-weight: 200;
+    margin: 10px 0 30px;
+  }
+
+}

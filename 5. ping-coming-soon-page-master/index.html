@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:200,300,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
   <link rel="stylesheet" href="main.css">
   <title>Frontend Mentor | Ping coming soon page</title>
@@ -19,33 +19,33 @@
 <body>
 
   <main class="container">
-    <img src="./images/logo.svg" alt="PING. logo">
-    <h1>We are launching <span>soon!</span></h1>
-    <p>Subscribe and get notified</p>
-    <form >
-      <input type="email" name="email" id="email">
-      <button type="submit">Notify Me</button>
+    <img class="logo" src="./images/logo.svg" alt="PING. logo">
+    <h1 class="title">We are launching <span>soon!</span></h1>
+    <p class="subtitle">Subscribe and get notified</p>
+    <form class="newsletterForm">
+      <input placeholder="Your email address..." type="email" name="email" id="email" class="emailInput">
+      <button type="submit" class="emailSubmit">Notify Me</button>
     </form>
-    <img src="./images/illustration-dashboard.png" alt="dashboard_illustration">
+    <img class="dashboard" src="./images/illustration-dashboard.png" alt="dashboard_illustration">
 
     <ul class="socials">
-      <li><i class="fab fa-facebook-f"></i></li>
-      <li><i class="fab fa-twitter"></i></li>
-      <li><i class="fab fa-instagram"></i></li>
+      <li class="item"><i class="fab fa-facebook-f fa-xs"></i></li>
+      <li class="item"><i class="fab fa-twitter fa-xs"></i></li>
+      <li class="item"><i class="fab fa-instagram fa-xs"></i></li>
     </ul>
 
-    <p>&copy; Copyright Ping All rights reserved.</p>
-
+    <p class="copyright">&copy; Copyright Ping All rights reserved.</p>
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Aroniero</a>.
+      </p>
+    </footer>
   </main>
 
 
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Aroniero</a>.
-    </p>
-  </footer>
+
   <script src="main.js"></script>
 </body>
 </html>
