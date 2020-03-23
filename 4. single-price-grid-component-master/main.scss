@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// # Front-end Style Guide
+// ## Layout
+$Mobile: 375px;
+$Desktop: 1440px;
+
+// ## Colors
+// ### Primary
+$Cyan: hsl(179, 62%, 43%);
+$LightCyan: hsl(179, 47%, 52%);
+$BrightYellow: hsl(71, 73%, 54%);
+
+// ### Neutral
+$LightGray: hsl(204, 43%, 93%);
+$GrayishBlue: hsl(218, 22%, 67%);
+
+
+// ## Shadows
+$primaryShadow: 0px 0px 31px -14px rgba(0,0,0,0.53);
+
+
+body{
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+
+
+section{
+  padding: 50px 30px;
+}
+
+h1 {
+  margin-bottom: 35px;
+}
+h2{
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.mainContent {
+  min-width: 700px;
+  box-shadow: $primaryShadow;
+  border-radius: 10px;
+
+  .accessInfo{
+    &__title{
+      color: $Cyan;
+    }
+    &__subtitle{
+      color: $BrightYellow;
+      font-weight: 700;
+    }
+    &__description{
+      color: $GrayishBlue;
+      line-height: 1.8;
+    }
+  }
+
+  .subscriptionInfo {
+    display: flex;
+    color: #fff;
+
+    .leftSide{
+      flex: 1;
+      background: $Cyan;
+
+      &__price{
+        display: flex;
+        margin-bottom: 8px;
+        span{
+          font-size: 40px;
+        }
+        p{
+          align-self: center;
+          margin-left: 10px;
+        }
+      }
+
+      &__desc{
+        margin-bottom: 30px;
+      }
+
+      &__btn {
+        background: $BrightYellow;
+        border: none;
+        padding: 15px 30px;
+        font-size: 20px;
+        border-radius: 5px;
+        width: 100%;
+        color: #fff;
+        box-shadow: $primaryShadow;
+      }
+    }
+
+    .rightSide {
+      flex: 1;
+      background: $LightCyan;
+
+      &__desc{
+        line-height: 1.45;
+      }
+    }
+  }
+}
+
+footer{
+  margin-top: 40px;
+  .attribution {
+    font-size: 20px;
+  }
+}
