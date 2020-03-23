@@ -29,13 +29,16 @@ body {
 .container .title {
   font-weight: 300;
   font-size: 30px;
+  color: #969696;
 }
 
 .container .title span {
+  color: #000;
   font-weight: 700;
 }
 
 .container .subtitle {
+  color: #969696;
   font-size: 15px;
   margin: 25px 0 30px;
 }
@@ -109,8 +112,39 @@ body {
 }
 
 .container .copyright {
+  color: #969696;
   font-size: 13px;
   font-weight: 200;
   margin: 10px 0 30px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    margin-top: 50px;
+  }
+  .container .newsletterForm {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .container .newsletterForm .emailInput, .container .newsletterForm .emailSubmit {
+    padding: 20px 35px;
+    border-radius: 40px;
+  }
+  .container .newsletterForm .emailInput {
+    width: 65%;
+  }
+  .container .newsletterForm .emailSubmit {
+    margin-left: 2%;
+    width: 30%;
+  }
+  .container .dashboard {
+    max-width: 600px;
+    margin: 0 -20px 20px;
+  }
+  .container .socials {
+    padding: 25px 30px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

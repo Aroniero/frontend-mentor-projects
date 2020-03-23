@@ -37,11 +37,14 @@ body {
   .title{
     font-weight: 300;
     font-size: 30px;
+    color: $Gray;
     span{
+      color: #000;
       font-weight: 700;
     }
   }
   .subtitle{
+    color: $Gray;
     font-size: 15px;
     margin: 25px 0 30px;
   }
@@ -78,11 +81,9 @@ body {
     display: flex;
     justify-content: center;
     padding: 30px;
-    
     list-style-type: none;
 
     .item {
-     
       text-align: center;
       border: 1px solid $PaleBlue;
       border-radius: 40px;
@@ -96,9 +97,40 @@ body {
   }
 
   .copyright{
+    color: $Gray;
     font-size: 13px;
     font-weight: 200;
     margin: 10px 0 30px;
   }
+}
 
+@media (min-width: 1200px) {
+  .container{
+    margin-top: 50px;
+
+    .newsletterForm{
+      flex-direction: row;
+
+      .emailInput, .emailSubmit{
+        padding: 20px 35px;
+        border-radius: 40px;
+      }
+      .emailInput{
+        width: 65%;
+      }
+      .emailSubmit{
+        margin-left: 2%;
+        width: 30%;
+      }
+
+    }
+
+    .dashboard {
+      max-width: 600px;
+      margin: 0 -20px 20px;
+    }
+    .socials{
+      padding: 25px 30px;
+    }
+  }
 }
