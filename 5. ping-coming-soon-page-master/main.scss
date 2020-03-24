@@ -61,12 +61,26 @@ body {
       margin-bottom: 10px;
       outline: none;
     }
-    // INPUT
+    // INPUT\
+    .emailContainer {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
     .emailInput::placeholder{
       color: $PaleBlue;
     }
     .emailError {
       border: 1px solid $LightRed;
+    }
+
+    // Error MSG
+    .errorMsg {
+
+      font-size: 14px;
+      color: $LightRed;
+      font-style: italic;
     }
 
     // SUBMIT BTN
@@ -107,6 +121,7 @@ body {
     }
     .item:hover{
       background-color: $Blue;
+      cursor: pointer;
       i:hover {
         color: white;
       }
@@ -129,13 +144,24 @@ body {
     .newsletterForm{
       flex-direction: row;
 
+
       .emailInput, .emailSubmit{
         padding: 20px 35px;
         border-radius: 40px;
       }
-      .emailInput{
-        width: 65%;
+
+      .emailContainer {
+        position: relative;
+        .emailInput{
+
+        }
+        .errorMsg {
+          position: absolute;
+          bottom: -50%;
+          left: 5%
+        }
       }
+
       .emailSubmit{
         margin-left: 2%;
         width: 30%;

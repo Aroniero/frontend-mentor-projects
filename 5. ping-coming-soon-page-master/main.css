@@ -62,6 +62,17 @@ body {
   outline: none;
 }
 
+.container .newsletterForm .emailContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
 .container .newsletterForm .emailInput::-webkit-input-placeholder {
   color: #c2d3ff;
 }
@@ -80,6 +91,12 @@ body {
 
 .container .newsletterForm .emailError {
   border: 1px solid #ff5263;
+}
+
+.container .newsletterForm .errorMsg {
+  font-size: 14px;
+  color: #ff5263;
+  font-style: italic;
 }
 
 .container .newsletterForm .emailSubmit {
@@ -123,6 +140,7 @@ body {
 
 .container .socials .item:hover {
   background-color: #4f7df3;
+  cursor: pointer;
 }
 
 .container .socials .item:hover i:hover {
@@ -150,8 +168,13 @@ body {
     padding: 20px 35px;
     border-radius: 40px;
   }
-  .container .newsletterForm .emailInput {
-    width: 65%;
+  .container .newsletterForm .emailContainer {
+    position: relative;
+  }
+  .container .newsletterForm .emailContainer .errorMsg {
+    position: absolute;
+    bottom: -50%;
+    left: 5%;
   }
   .container .newsletterForm .emailSubmit {
     margin-left: 2%;

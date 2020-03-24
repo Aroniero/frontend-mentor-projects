@@ -1,65 +1,45 @@
 
-// const form = document.querySelector('.box');
-// // const name = document.querySelector()
-
+const form = document.querySelector('.newsletterForm');
 
 // // console.log(errIcon);
 
 
-// function error(field, state) {
-//   const input = form[field]
+// console.log(smallTag);
 
-//   const smallTag = form[field].parentNode.querySelector('small');
-//   const errIcon = form[field].parentNode.querySelector('.errIcon');
+function error(field, state) {
+  const input = form[field];
 
-
-//   if (state === 'add') {
-//     input.classList.add('error')
-//     smallTag.style.opacity = 1;
-//     errIcon.style.opacity = 1;
-//   }
-//   if (state === 'remove') {
-//     input.classList.remove('error')
-//     smallTag.style.opacity = 0;
-//     errIcon.style.opacity = 0;
-//   }
-
-// }
+  const smallTag = form[field].parentNode.querySelector('small');
 
 
-// function createAcc(e) {
-//   e.preventDefault()
-//   const name = form['firstname'].value;
-//   const lastname = form['lastname'].value;
-//   const email = form['email'].value;
-//   const password = form['password'].value;
 
 
-//   if (name === '') {
-//     error('firstname', 'add');
-//   } else {
-//     error('firstname', 'remove')
-//   }
+  if (state === 'add') {
+    smallTag.innerText = 'Please provide a valid email address';
+    input.classList.add('emailError');
+    smallTag.style.marginBottom = "20px";
+  }
+  if (state === 'remove') {
+    smallTag.innerText = ''
+    input.classList.remove('emailError')
+    smallTag.style.marginBottom = "0px";
+  }
 
-//   if (lastname === '') {
-//     error('lastname', 'add');
-//   } else {
-//     error('lastname', 'remove')
-//   }
-//   if (password === '') {
-//     error('password', 'add');
-//   } else {
-//     error('password', 'remove');
-//   }
-//   if (email === '') {
-//     error('email', 'add');
-//   } else {
-//     error('email', 'remove');
-//   }
+}
 
 
-//   console.log(name, lastname, email, password);
-// }
+function createAcc(e) {
+  e.preventDefault()
+  const email = form['email'].value;
 
 
-// form.addEventListener('submit', createAcc)
+  if (email === '') {
+    error('email', 'add');
+  } else {
+    error('email', 'remove');
+  }
+
+}
+
+
+form.addEventListener('submit', createAcc)
