@@ -3,7 +3,7 @@
 // ## Colors
 // ### Primary
 $Blue: hsl(223, 87%, 63%);
-
+$BlueHover: hsl(223, 70%, 70%);
 // ### Secondary
 $PaleBlue: hsl(223, 100%, 88%);
 $LightRed: hsl(354, 100%, 66%);
@@ -59,16 +59,28 @@ body {
       border-radius: 20px;
       border: 1px solid $PaleBlue;
       margin-bottom: 10px;
+      outline: none;
     }
-
+    // INPUT
     .emailInput::placeholder{
       color: $PaleBlue;
     }
+    .emailError {
+      border: 1px solid $LightRed;
+    }
+
+    // SUBMIT BTN
     .emailSubmit{
       background-color: $Blue;
       color: #fff;
       font-weight: 600;
+
+      &:hover{
+        background-color: $BlueHover;
+        cursor: pointer;
+      }
     }
+
   }
 
   .dashboard{
@@ -93,7 +105,13 @@ body {
         padding: 10px 12px;
       }
     }
-    
+    .item:hover{
+      background-color: $Blue;
+      i:hover {
+        color: white;
+      }
+    }
+
   }
 
   .copyright{

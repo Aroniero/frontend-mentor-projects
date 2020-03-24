@@ -59,6 +59,7 @@ body {
   border-radius: 20px;
   border: 1px solid #c2d3ff;
   margin-bottom: 10px;
+  outline: none;
 }
 
 .container .newsletterForm .emailInput::-webkit-input-placeholder {
@@ -77,10 +78,19 @@ body {
   color: #c2d3ff;
 }
 
+.container .newsletterForm .emailError {
+  border: 1px solid #ff5263;
+}
+
 .container .newsletterForm .emailSubmit {
   background-color: #4f7df3;
   color: #fff;
   font-weight: 600;
+}
+
+.container .newsletterForm .emailSubmit:hover {
+  background-color: #7d9be8;
+  cursor: pointer;
 }
 
 .container .dashboard {
@@ -109,6 +119,14 @@ body {
 .container .socials .item i {
   color: #4f7df3;
   padding: 10px 12px;
+}
+
+.container .socials .item:hover {
+  background-color: #4f7df3;
+}
+
+.container .socials .item:hover i:hover {
+  color: white;
 }
 
 .container .copyright {
