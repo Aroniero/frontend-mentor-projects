@@ -69,71 +69,87 @@
       </article>
     </main>
 
-    <article class="container">
+    <article class="cardContainer">
       <section class="card">
-        <h2 class="card__title">Grow Together</h2>
         <div class="card__desc">
+          <h2>Grow Together</h2>
           <p>
             Generate meaningful discussions with your audience and build a
             strong, loyal community. Think of the insighftul conversations you
             miss out on with a feedback form
           </p>
-          <img src="/images/illustration-grow-together.svg" alt="two-people" />
         </div>
+        <img
+          class="card__img"
+          src="/images/illustration-grow-together.svg"
+          alt="two-people"
+        />
       </section>
 
       <section class="card">
-        <h2 class="card__title">Flowing Conversations</h2>
         <div class="card__desc">
+          <h2>Flowing Conversations</h2>
           <p>
             You wouldnt-paginate a conversation in real life, so why do it
             online? Our threads have just-in-time loading for a more natural
             flow
           </p>
-          <img
-            src="/images/illustration-flowing-conversation.svg"
-            alt="four-people"
-          />
         </div>
+        <img
+          class="card__img"
+          src="/images/illustration-flowing-conversation.svg"
+          alt="four-people"
+        />
       </section>
 
       <section class="card">
-        <h2 class="card__title">Your Users</h2>
         <div class="card__desc">
+          <h2>Your Users</h2>
           <p>
             It takes no time at all to integrate Huddle with your app's
             authentication solution. This means, once signed in to your app,
             your users can start chatting immediately.
           </p>
-          <img src="/images/illustration-your-users.svg" alt="three-people" />
         </div>
+        <img
+          class="card__img"
+          src="/images/illustration-your-users.svg"
+          alt="three-people"
+        />
       </section>
 
-      <section class="signupCard">
+      <section class="card signupCard">
         <h3 class="signupCard__title">Ready To Build Your Community?</h3>
-        <button class="getStartedBtn">Get Started For Free</button>
+        <button class="getStartedBtn pinkBtn">Get Started For Free</button>
       </section>
     </article>
 
-    <footer class="container">
-      <img src="/images/logo.svg" alt="Huddle_Logo" />
-      <article class="infoContainer">
+    <footer class="infoContainer">
+      <img src="/images/logo-white.svg" alt="Huddle_Logo" />
+
+      <article class="contactContainer">
         <section class="contact">
-          <div class="contact__location">
-            <img src="/images/icon-location.svg" alt="location-icon" />
+          <div class="contact__item">
+            <div class="icon">
+              <img src="/images/icon-location.svg" alt="location-icon" />
+            </div>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Molestias praesentium, assumenda tenetur quaerat tempora libero
             </p>
           </div>
 
-          <div class="contact__phone">
-            <img src="/images/icon-phone.svg" alt="phone-icon" />
+          <div class="contact__item">
+            <div class="icon">
+              <img src="/images/icon-phone.svg" alt="phone-icon" />
+            </div>
             <p>+1-543-123-4567</p>
           </div>
 
-          <div class="contact__email">
-            <img src="/images/icon-email.svg" alt="email-icon" />
+          <div class="contact__item">
+            <div class="icon">
+              <img src="/images/icon-email.svg" alt="email-icon" />
+            </div>
             <p>example@huddle.com</p>
           </div>
         </section>
@@ -152,25 +168,35 @@
         </nav>
 
         <section class="socials">
-          <ul class="socials">
-            <li class="item"><i class="fab fa-facebook-f fa-xs"></i></li>
-            <li class="item"><i class="fab fa-twitter fa-xs"></i></li>
-            <li class="item"><i class="fab fa-instagram fa-xs"></i></li>
-          </ul>
+          <ul>
+            <li>
+              <a href="#" class="circle">
+               <i class="fab fa-facebook-f fa-sm"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="circle">
+                <i class="fab fa-twitter fa-sm"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="circle">
+                <i class="fab fa-instagram fa-sm"></i>
+              </a>
+            </li>
+          </li>
         </section>
       </article>
 
       <p class="copyright">
         &copf; Copyright 2018 Huddle. All rights reserved.
       </p>
-    </footer>
 
-    <footer>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#">Aroniero</a>.
       </p>
     </footer>
   </body>

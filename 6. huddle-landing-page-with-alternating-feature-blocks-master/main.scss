@@ -32,20 +32,25 @@ h6 {
 }
 
 // GLOBAL STYLES FOR SPECIFIC STYLES
-.container {
+.container,
+.cardContainer,
+.infoContainer {
   padding: 40px 30px;
 }
-
-img {
-  // width: 100%;
-}
-
+// Global Buttons
 .getStartedBtn {
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 40px;
   border: none;
   background-color: #ffffff;
   box-shadow: $primaryBoxShadow;
+}
+.pinkBtn {
+  margin-top: 10px;
+  color: #fff;
+  background-color: $Pink;
+  font-weight: 600;
+  padding: 15px 60px;
 }
 
 // SPECIFIC STYLES
@@ -74,7 +79,7 @@ main {
   .hero {
     &__info {
       text-align: center;
-      padding: 30px;
+      padding-right: 50px;
 
       h1,
       p,
@@ -91,13 +96,6 @@ main {
         font-size: 20px;
         line-height: 1.5;
       }
-      .pinkBtn {
-        margin-top: 10px;
-        color: #fff;
-        background-color: $Pink;
-        font-weight: 600;
-        padding: 15px 60px;
-      }
     }
 
     &__image {
@@ -106,11 +104,237 @@ main {
       }
     }
   }
+}
 
+.cardContainer {
   .card {
-    &__title {
-    }
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: white;
+    border-radius: 20px;
+    padding: 60px 70px;
+    box-shadow: $primaryBoxShadow;
+    margin: 40px 0;
     &__desc {
+      margin: 40px 0 20px 0;
+      text-align: center;
+      h2 {
+        margin: 20px 0;
+      }
+    }
+    &__img {
+      width: 100%;
+    }
+  }
+
+  .signupCard {
+    // background-color: red;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 50px;
+    margin-bottom: -150px;
+    z-index: 5;
+    &__title {
+      font-weight: 700;
+      font-size: 25px;
+    }
+    button {
+      padding: 20px 60px;
+      width: 80%;
+      margin: 40px auto 10px auto;
+    }
+  }
+}
+
+.infoContainer {
+  padding-top: 200px;
+  z-index: -1;
+  background-color: $VeryDarkCyan;
+  color: white;
+  img {
+    color: white;
+  }
+
+  .contactContainer {
+    margin-top: 30px;
+
+    // CONTACT
+    .contact {
+      margin: 40px 0 60px 0;
+      &__item {
+        display: flex;
+        margin-bottom: 30px;
+        .icon,
+        p {
+          align-self: flex-start;
+        }
+        .icon {
+          min-width: 20px;
+        }
+        p {
+          margin-left: 20px;
+        }
+      }
+    }
+
+    // LINKS
+    .links {
+      color: #fff;
+      ul {
+        list-style-type: none;
+        li {
+          margin-bottom: 20px;
+          a {
+            color: #fff;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    // SOCIAL ICONS
+    .socials {
+      margin: 50px 0 30px;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 150px;
+        list-style-type: none;
+        li {
+          a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 40px;
+            border: 1px solid white;
+            width: 40px;
+            height: 40px;
+            i {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    margin: 40px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .cardContainer,
+  .infoContainer {
+    padding: 60px 100px;
+  }
+
+  main {
+    .hero {
+      display: flex;
+
+      &__info {
+        text-align: left;
+        flex: 1;
+        p {
+          max-width: 650px;
+        }
+      }
+      &__image {
+        flex: 1;
+      }
+    }
+  }
+
+  .cardContainer {
+    justify-content: center;
+    position: relative;
+    padding-bottom: 220px;
+
+    .card {
+      display: flex;
+      flex-direction: row;
+      margin: 40px auto;
+      // max-width: 1500px;
+      &__desc {
+        text-align: left;
+        margin-right: 30px;
+        // flex: 1;
+        p {
+          // max-width: 520px;
+        }
+      }
+      &__img {
+        // flex: 1;
+        margin-left: 100px;
+        max-width: 300px;
+      }
+    }
+
+    .card:nth-child(2) {
+      flex-direction: row-reverse;
+
+      .card__img {
+        margin: 0 100px 0 0;
+      }
+    }
+
+    .signupCard {
+      position: absolute;
+
+      bottom: -4%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      margin: 0 auto;
+      flex-direction: column;
+      // width: 50vmax;
+      min-width: 600px;
+      // max-width: 80vmax;
+      padding: 40px 50px;
+
+      button {
+        margin: 30px auto 10px auto;
+        width: 60%;
+      }
+    }
+  }
+
+  .infoContainer {
+    padding-top: 150px;
+
+    .contactContainer {
+      display: flex;
+      // justify-content: space-between;
+      .contact {
+        flex: 1;
+        margin: 0;
+      }
+
+      .links {
+        margin: 0 140px;
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        // margin-
+      }
+      .socials {
+        flex: 1;
+        margin: 0;
+        ul {
+          justify-content: space-around;
+          margin: 0;
+        }
+      }
+    }
+    .attribution {
+      font-size: 26px;
+      a {
+        color: white;
+        text-decoration: none;
+      }
     }
   }
 }
