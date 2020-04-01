@@ -1,9 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-html {
   padding: 0;
   margin: 0;
 }
@@ -11,6 +8,7 @@ html {
 body {
   font-size: 10px;
   font-family: "Open Sans", sans-serif;
+  padding: auto;
 }
 
 h1,
@@ -21,5 +19,250 @@ h3 {
 
 img {
   width: 20%;
+}
+
+.container {
+  padding: 30px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1200px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+}
+
+header .logo {
+  -webkit-box-flex: 0.3;
+      -ms-flex: 0.3;
+          flex: 0.3;
+}
+
+header .logo img {
+  margin: 10px 0;
+  width: 80%;
+}
+
+header nav {
+  -webkit-box-flex: 0.7;
+      -ms-flex: 0.7;
+          flex: 0.7;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0;
+}
+
+header nav ul li {
+  margin: 0 0.5rem;
+  font-size: 0.8rem;
+}
+
+header nav ul li a {
+  color: #070439;
+  text-decoration: none;
+}
+
+.image {
+  text-align: center;
+}
+
+.image img {
+  width: 90%;
+}
+
+main {
+  margin: 5rem 0;
+  background-image: url(/images/bg-curve-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+main .info {
+  text-align: center;
+  margin: 50px 0 90px 0;
+}
+
+main .info__title {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+main .info__desc {
+  font-size: 1rem;
+  margin: 30px 0;
+}
+
+main .info__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .info__form input,
+main .info__form button {
+  padding: 10px 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+main .info__form input {
+  margin-bottom: 15px;
+}
+
+main .info__form button {
+  background-color: #3065f8;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.showcase {
+  background-color: #f6f6fe;
+}
+
+.showcase .content__title {
+  font-size: 1rem;
+  text-align: center;
+  padding: 40px 0 20px 0;
+}
+
+.showcase .content__desc {
+  font-size: 0.9rem;
+  color: #585989;
+  margin-bottom: 20px;
+}
+
+.showcase .content__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 40px auto;
+  padding: 3px 0;
+  color: #3c9f8f;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #3c9f8f;
+}
+
+.showcase .content__btn span {
+  margin-left: 10px;
+}
+
+.showcase .content__btn span img {
+  width: 100%;
+}
+
+.showcase .content .card {
+  background-color: #ffffff;
+  padding: 20px 30px;
+}
+
+.showcase .content .card__image {
+  width: 30%;
+}
+
+.showcase .content .card__desc {
+  font-size: 0.7rem;
+  line-height: 1.8;
+  margin: 10px 0;
+}
+
+.showcase .content .card__avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.showcase .content .card__avatar .avatarImg img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.showcase .content .card__avatar .avatarInfo {
+  margin-left: 5px;
+}
+
+.access {
+  background-color: #585989;
+  text-align: center;
+  padding: 30px 40px;
+}
+
+.access .leftSide {
+  color: #ffffff;
+}
+
+.access .leftSide h2 {
+  font-size: 1rem;
+}
+
+.access .leftSide p {
+  padding: 0 10px;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #bfbfbf;
+  margin: 25px 0;
+}
+
+.access .rightSide {
+  max-width: 250px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.access .rightSide input,
+.access .rightSide button {
+  padding: 10px 15px;
+  font-size: 0.6rem;
+  border: none;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.access .rightSide input {
+  margin-bottom: 15px;
+}
+
+.access .rightSide input::-webkit-input-placeholder {
+  color: #bfbfbf;
+  font-weight: 800;
+}
+
+.access .rightSide input:-ms-input-placeholder {
+  color: #bfbfbf;
+  font-weight: 800;
+}
+
+.access .rightSide input::-ms-input-placeholder {
+  color: #bfbfbf;
+  font-weight: 800;
+}
+
+.access .rightSide input::placeholder {
+  color: #bfbfbf;
+  font-weight: 800;
+}
+
+.access .rightSide button {
+  background-color: #3065f8;
+  color: #ffffff;
+  font-weight: 700;
 }
 /*# sourceMappingURL=main.css.map */
