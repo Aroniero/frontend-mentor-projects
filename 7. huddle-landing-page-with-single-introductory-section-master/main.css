@@ -30,7 +30,7 @@ h3 {
 }
 
 header img {
-  margin: 3rem 0 6rem 0;
+  margin: 3rem 0 4rem 0;
   width: 40%;
 }
 
@@ -97,11 +97,59 @@ main .rightSide button {
           align-items: center;
   border-radius: 40px;
   border: 1px solid white;
-  width: 40px;
-  height: 40px;
+  width: 4rem;
+  height: 4rem;
 }
 
 .socials ul li a i {
-  color: #fff;
+  color: white;
+}
+
+@media (min-width: 900px) {
+  html {
+    font-size: 12px;
+  }
+  body {
+    background-image: url(/images/bg-desktop.svg);
+  }
+  header img {
+    max-width: 20rem;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .leftSide {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  main .leftSide img {
+    width: 100%;
+  }
+  main .rightSide {
+    margin: 0 0 0 10rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    text-align: start;
+  }
+  main .rightSide button {
+    padding: 1rem 5rem;
+    font-size: 1.5rem;
+  }
+  .socials {
+    margin: 5rem 0 2rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  html {
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

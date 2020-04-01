@@ -32,7 +32,7 @@ h3 {
 
 header {
   img {
-    margin: 3rem 0 6rem 0;
+    margin: 3rem 0 4rem 0;
     width: 40%;
   }
 }
@@ -88,12 +88,68 @@ main {
         align-items: center;
         border-radius: 40px;
         border: 1px solid white;
-        width: 40px;
-        height: 40px;
+        width: 4rem;
+        height: 4rem;
         i {
-          color: #fff;
+          color: white;
         }
       }
     }
+  }
+}
+
+@media (min-width: 900px) {
+  html {
+    font-size: 12px;
+  }
+  body {
+    background-image: url(/images/bg-desktop.svg);
+  }
+  header {
+    img {
+      max-width: 20rem;
+    }
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    .leftSide {
+      flex: 1;
+      img {
+        width: 100%;
+      }
+    }
+    .rightSide {
+      margin: 0 0 0 10rem;
+      flex: 1;
+      text-align: start;
+      button {
+        padding: 1rem 5rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .socials {
+    margin: 5rem 0 2rem;
+
+    // ul {
+    //   li {
+    //     a {
+    //       border: 1px solid white;
+    //       width: ;
+    //       height: 40px;
+    //       i {
+    //         color: #fff;
+    //       }
+    //     }
+    //   }
+    // }
+  }
+}
+@media (min-width: 1500px) {
+  html {
+    font-size: 15px;
   }
 }
