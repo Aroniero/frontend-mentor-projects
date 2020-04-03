@@ -43,17 +43,21 @@ header {
     flex: 0.3;
 
     img {
-      margin: 10px 0;
+      margin: auto 0;
       width: 80%;
+      max-width: 150px;
     }
   }
 
   nav {
     flex: 0.7;
+    margin: auto 0;
     ul {
       list-style-type: none;
       display: flex;
       justify-content: flex-end;
+      // align-items: center;
+      // margin: auto 0;
       padding: 0;
 
       li {
@@ -80,6 +84,7 @@ main {
   background-image: url(/images/bg-curve-mobile.svg);
   background-repeat: no-repeat;
   background-position: bottom center;
+  background-size: 100%;
   .info {
     text-align: center;
     margin: 50px 0 90px 0;
@@ -105,6 +110,7 @@ main {
       }
       button {
         background-color: $BrightBlue;
+        border-color: transparent;
         color: #ffffff;
         font-weight: 700;
       }
@@ -114,7 +120,7 @@ main {
 
 .showcase {
   background-color: $LightGrayishBlue;
-
+  padding-bottom: 100px;
   .content {
     &__title {
       font-size: 1rem;
@@ -150,6 +156,8 @@ main {
     .card {
       background-color: #ffffff;
       padding: 20px 30px;
+      max-width: 350px;
+      margin: 0 auto;
       &__image {
         width: 30%;
       }
@@ -222,6 +230,190 @@ main {
 
       color: #ffffff;
       font-weight: 700;
+    }
+  }
+}
+
+.infoContainer {
+  background-color: $VeryDarkBlue;
+  color: white;
+  .whiteLogo {
+    margin-top: 30px;
+    width: 50%;
+  }
+  .contactContainer {
+    .contact {
+      margin: 40px 0 80px 0;
+      &__item {
+        display: flex;
+        font-size: 1rem;
+        margin-bottom: 15px;
+        .icon {
+          img {
+            width: 100%;
+          }
+        }
+        p {
+          margin-left: 25px;
+          font-weight: 200;
+        }
+      }
+    }
+  }
+  .links {
+    ul {
+      margin: 50px 0;
+      li {
+        list-style-type: none;
+        margin-bottom: 20px;
+        a {
+          color: white;
+          font-size: 1rem;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .socials {
+    width: 35%;
+    margin: 50px auto;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      li {
+        list-style-type: none;
+        .circle {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 40px;
+          border: 1px solid white;
+          width: 40px;
+          height: 40px;
+
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  html {
+    font-size: 20px;
+  }
+
+  .container {
+    padding: 30px 260px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: auto;
+  }
+
+  .image {
+    margin-left: 10px;
+  }
+
+  .maincontent {
+    padding-bottom: 100px;
+  }
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    // justify-content: space-between;
+
+    .image {
+      flex: 1;
+      img {
+        margin: auto 0;
+      }
+    }
+    .info {
+      flex: 1;
+      text-align: left;
+      &__form {
+        flex-direction: row;
+
+        input {
+          flex: 0.6;
+          margin-bottom: 15px;
+        }
+        button {
+          flex: 0.4;
+          margin: 0 0 15px 15px;
+        }
+      }
+    }
+  }
+
+  .showcase {
+    display: flex;
+    flex-direction: row-reverse;
+    .content {
+      &__title {
+        text-align: left;
+      }
+      &__btn {
+        margin: 40px auto 40px 0;
+      }
+      .card {
+        margin: 0 auto 0 0;
+      }
+    }
+    .image {
+      margin: auto;
+      img {
+        display: inline-block;
+      }
+    }
+  }
+
+  .access {
+    display: flex;
+    text-align: left;
+    padding: 60px 260px;
+    .leftSide {
+      flex: 1;
+      p {
+        padding: 0;
+      }
+    }
+    .rightSide {
+      max-width: none;
+      padding-left: 100px;
+      flex: 1;
+      button {
+        width: 40%;
+      }
+    }
+  }
+
+  .infoContainer {
+    .whiteLogo {
+      width: 10%;
+      margin-bottom: 20px;
+    }
+    .contactContainer {
+      display: flex;
+      .contact {
+        flex: 1;
+        margin-top: 0px;
+      }
+      .links {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+      }
+      .socials {
+        flex: 1;
+        ul {
+          width: 50%;
+          margin: 0 auto;
+        }
+      }
     }
   }
 }
